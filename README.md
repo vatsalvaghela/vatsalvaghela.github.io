@@ -1,1 +1,1 @@
-# vatsalvaghela.github.io
+mailto:vatsalvaghela24@gmail.com
