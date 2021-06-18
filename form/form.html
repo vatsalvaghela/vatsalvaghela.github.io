@@ -1,222 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head> 
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-	  <style>
-		body{
-            margin-top:300px;    
-            font-family: 'Roboto', sans-serif;
-            }
-          .borderline {
-                border-bottom: 5px solid #e6e6e6; 
-                width: 100%;
-            }
-            .doctor-list{ 
-                width: 100%; 
-                background-color: #F2F2F2; 
-                margin: 10px 0;      
-            }
-
-            .doc-color-green {
-                border-left: 10px solid #22D475;
-            }
-            .doc-color-blue {
-                border-left: 10px solid #4FD2E3;
-            }
-            .doc-color-yellow {
-                border-left: 10px solid #F7DE1B;
-            }
-            .doc-color-orange {
-                border-left: 10px solid #FFAB3D;
-            }
-            .doc-color-purple {
-                border-left: 10px solid #CC65E0;
-            }
-          .popover {min-width: 27%;}
-          .btn-default { background-color: #dbdbdb; box-shadow: 0px 3px #ccc; }
-          .btn-primary { background-color: #005596; box-shadow: 0px 3px #005596;}
-	</style>
-  </head>
-<!------ Include the above in your HEAD tag ---------->
-	
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
-<div class="container">
-	<div class="row">
-		<div class="col-md-6 col-md-offset-4">
-              <div class="po-markup">
-                <a href="#" class="btn btn-lg btn-success po-link">Click</a> ←  Here
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
 
-                <div class="po-content hidden">
-                    <div class="po-title">
-                        Wed June 25, 2014
-                    </div> <!-- ./po-title -->
-            
-                    <div class="po-body">
-                        <form class="form-group">
-                            <select class="form-control">
-                              <option>Select a physician</option>
-                              <option>Doe, John</option>
-                              <option>Jones, Jane</option>
-                              <option>Marshall, Penny</option>
-                              <option>Sherman, Cindy</option>
-                              <option>Truman, Laverne</option>
-                            </select>
-                        </form>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-                        <div class="doctor-list ">
-                            <div class="doc-color-green">
-                                <div style="padding: 10px">
-                                <a href="#"></a> Doe, John
-                                </div>
-                            </div>
-                        </div>
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
 
-                        <div class="col-sm-12" style="padding: 0px">
-                           <div class='col-md-5' style="padding: 0">
-                                <div class="form-group">
-                                    <select class="form-control">
-                                      <option>Start time</option>
-                                      <option>7:00am</option>
-                                      <option>8:00am</option>
-                                      <option>9:00am</option>
-                                      <option>10:00am</option>
-                                      <option>11:00am</option>
-                                      <option>12:00pm</option>
-                                      <option>1:00pm</option>
-                                      <option>2:00pm</option>
-                                      <option>3:00pm</option>
-                                      <option>4:00pm</option>
-                                      <option>5:00pm</option>
-                                      <option>6:00pm</option>
-                                      <option>7:00pm</option>
-                                      <option>8:00pm</option>
-                                      <option>9:00pm</option>
-                                      <option>10:00pm</option>
-                                      <option>11:00pm</option>
-                                      <option>12:00am</option>
-                                      <option>1:00am</option>
-                                      <option>2:00am</option>
-                                      <option>3:00am</option>
-                                      <option>4:00am</option>
-                                      <option>5:00am</option>
-                                      <option>6:00am</option>
-                                    </select>  
-                                </div>
-                            </div>
-                            <div class="col-md-2">to </div>
-                            <div class='col-md-5' style="padding: 0">
-                                <div class="form-group">
-                                    <select class="form-control">
-                                      <option>Stop Time</option>
-                                      <option>7:00am</option>
-                                      <option>8:00am</option>
-                                      <option>9:00am</option>
-                                      <option>10:00am</option>
-                                      <option>11:00am</option>
-                                      <option>12:00pm</option>
-                                      <option>1:00pm</option>
-                                      <option>2:00pm</option>
-                                      <option>3:00pm</option>
-                                      <option>4:00pm</option>
-                                      <option>5:00pm</option>
-                                      <option>6:00pm</option>
-                                      <option>7:00pm</option>
-                                      <option>8:00pm</option>
-                                      <option>9:00pm</option>
-                                      <option>10:00pm</option>
-                                      <option>11:00pm</option>
-                                      <option>12:00am</option>
-                                      <option>1:00am</option>
-                                      <option>2:00am</option>
-                                      <option>3:00am</option>
-                                      <option>4:00am</option>
-                                      <option>5:00am</option>
-                                      <option>6:00am</option>
-                                    </select>  
-                                </div>
-                            </div>
-                        </div>
-                        <p>
-                            <a href="#"><b>+TIME BLOCK</b></a><br>
-                            <a href="#"><b>REPEAT</b></a>
-                            <p><b>REPEAT Today's schedule on:</b></p>
-                            <form class="form-group">
-                                <label class="checkbox-inline">
-                                  <input type="checkbox" id="inlineCheckbox1" value="option1"> Su
-                                </label>
-                                <label class="checkbox-inline">
-                                  <input type="checkbox" id="inlineCheckbox2" value="option2"> M
-                                </label>
-                                <label class="checkbox-inline">
-                                  <input type="checkbox" id="inlineCheckbox3" value="option3"> Tu
-                                </label>
-                                <label class="checkbox-inline">
-                                  <input type="checkbox" id="inlineCheckbox4" value="option3"> W
-                                </label>
-                                <label class="checkbox-inline">
-                                  <input type="checkbox" id="inlineCheckbox5" value="option3"> Th
-                                </label>
-                                <label class="checkbox-inline">
-                                  <input type="checkbox" id="inlineCheckbox6" value="option3"> F
-                                </label>
-                                <label class="checkbox-inline">
-                                  <input type="checkbox" id="inlineCheckbox7" value="option3"> Sa
-                                </label>
-                            </form>
-                            <form class="form-horizontal" role="form">
-                              <div class="form-group">
-                                <label class="col-sm-3 control-label">END ON:</label>
-                                <div class="col-sm-9">
-                                  <input type="text" class="form-control" placeholder="mm/dd/yyyy">
-                                </div>
-                              </div>
-                              <div class="form-group">
-                                <label class="col-sm-3 control-label">OR:</label>
-                                <div class="col-sm-9">
-                                    <label class="checkbox-inline">
-                                      <input type="checkbox" id="inlineCheckbox1" value="option1"> NEVER
-                                    </label>
-                                </div>
-                              </div>                            
-                            </form>
-                        </p>
-                        <p>
-                            <button type="button" class="btn btn-lg btn-default">CANCEL</button>
-                            <button type="button" class="btn btn-lg btn-primary">REQUEST</button>
-                          
-                        </p>
-                    </div><!-- ./po-body -->
-                 </div>  <!-- ./po-content -->
-                 </div><!-- ./po-markup -->
-              
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
-                <hr>
-                </div>
-	</div>
-</div>
+<input type=hidden name="oid" value="00D2v000002kVvO">
+<input type=hidden name="retURL" value="https://binaryrepublik-amd-dev-ed.lightning.force.com/lightning/page/home">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="vatsalvaghela24@gmail.com">                                      -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+
+<label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+
+<label for="state">State/Province</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
+
+<input type="submit" name="submit">
+
+</form>
+
 </body>
-<script>
-	$(document).ready(function() {
-
-            $('.po-markup > .po-link').popover({
-            trigger: 'click',
-            html: true,  // must have if HTML is contained in popover
-
-            // get the title and conent
-            title: function() {
-                return $(this).parent().find('.po-title').html();
-            },
-            content: function() {
-                return $(this).parent().find('.po-body').html();
-            },
-
-            container: 'body',
-            placement: 'left'
-
-            });
-
-        });
-</script>
 </html>
