@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head> 
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	  <style>
+		body{
+            margin-top:300px;    
+            font-family: 'Roboto', sans-serif;
+            }
+          .borderline {
+                border-bottom: 5px solid #e6e6e6; 
+                width: 100%;
+            }
+            .doctor-list{ 
+                width: 100%; 
+                background-color: #F2F2F2; 
+                margin: 10px 0;      
+            }
+
+            .doc-color-green {
+                border-left: 10px solid #22D475;
+            }
+            .doc-color-blue {
+                border-left: 10px solid #4FD2E3;
+            }
+            .doc-color-yellow {
+                border-left: 10px solid #F7DE1B;
+            }
+            .doc-color-orange {
+                border-left: 10px solid #FFAB3D;
+            }
+            .doc-color-purple {
+                border-left: 10px solid #CC65E0;
+            }
+          .popover {min-width: 27%;}
+          .btn-default { background-color: #dbdbdb; box-shadow: 0px 3px #ccc; }
+          .btn-primary { background-color: #005596; box-shadow: 0px 3px #005596;}
+	</style>
   </head>
 <!------ Include the above in your HEAD tag ---------->
+	
 <body>
 <div class="container">
 	<div class="row">
@@ -162,4 +197,26 @@
 	</div>
 </div>
 </body>
+<script>
+	$(document).ready(function() {
+
+            $('.po-markup > .po-link').popover({
+            trigger: 'click',
+            html: true,  // must have if HTML is contained in popover
+
+            // get the title and conent
+            title: function() {
+                return $(this).parent().find('.po-title').html();
+            },
+            content: function() {
+                return $(this).parent().find('.po-body').html();
+            },
+
+            container: 'body',
+            placement: 'left'
+
+            });
+
+        });
+</script>
 </html>
